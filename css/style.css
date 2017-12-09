@@ -1,0 +1,10 @@
+body{
+  background-image: url("../images/DisneyBackground3.jpg");
+
+}
+
+h1, h2, h3{
+  font-size: 50px;
+  font-weight: bold;
+
+}
