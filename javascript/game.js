@@ -78,12 +78,12 @@ function randomWord() {
     console.log(" letterIndex  " + letterIndex);
 
     dupLetters(keyPress);
-
+    rightWord();
     if (totalGuess > 0) {
       if (letterIndex >= 0) {
         console.log("Exists")
         replaceBlanks(keyPress, letterIndex)
-        rightWord();
+
       }
     }
   }
