@@ -62,44 +62,28 @@ function randomWord() {
 
 
 
-  //
-  // function updateUsedLettersArr(letter) {
-  //     usedLetter.push(letter);
-  //     document.getElementById("usedLetters").innerHTML = usedLetter.join(' ');
-  // }
-
 
 
 
   function replaceBlanks(letter, index) {
     console.log("replaceBlanks")
 
-    startOver[index] = letter;
-    console.log(startOver);
-    document.getElementById("word").innerHTML = startOver.join(" ");
-
-
-    for (var i = 0; i < startOver.length; i++) {
-      console.log(startOver[i])
+    for (var i = 0; i < randomMovie.length; i++) {
+      //console.log(startOver[i])
       //console.log(startOver.charAt());
-      if (letter === startOver.indexOf(i)) {
-        console.log(startOver.indexOf(i));
-
-
-
-        console.log("LETTERS MATCH")
+      if (letter === randomMovie.charAt(i)) {
+        //console.log(randomMovie.charAt(i));
         startOver[i] = letter;
-
-        if (randomMovie === startOver) {
-
-          alert("You won!")
-        } else {
-          alert("You lost!")
-        }
+        //console.log(startOver);//
+        document.getElementById("word").innerHTML = startOver.join(' ');
       }
-
     }
   }
+
+  function dupLetters("duplicate"){
+    if ()
+  }
+
 
 
 
