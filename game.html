@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron header">
+      </h1 class="LetsPLay">Let's Play Hangman</h1>
+      <p class="lead">Guess a Disney Character</p>
+    </div>
+
+    <div class="card">
+      
+      <div class="card-body">
+        <h4>Word to Guess</h4>
+        <h2 class="card-text" id="wordToGuess">_ _ _ _ _ _</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Wrong Guesses</p><span id="wrongGuesses"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Guesses Left</p><span id="numOfGuessesLeft">9</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Win Counter: </p><span id="winCounter">0</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">Loss Counter: </p><span id="lossCounter">0</span>
+      </div>
+    </div>
+
+
+
+  </div>
+
+<script src="game.js"></script>
+</body>
+
+</html>

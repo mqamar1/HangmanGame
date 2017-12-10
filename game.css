@@ -1,0 +1,29 @@
+body{
+    background-image: url("assets/disneycharacters.png");
+
+}
+.header{
+  font-size: 30px;
+  color:blue;
+  font-weight: bold;
+  padding-left: 430px;
+  background-color: #F3D9B0;
+  border:solid;
+  border-color: black;
+
+}
+
+.lead{
+  padding-top: 10px;
+  color:red;
+  font-weight: bold;
+}
+
+.color{
+  background-color: #F3D9B0;
+
+}
+
+h4{
+  font-size:20px;
+}
