@@ -18,7 +18,7 @@ var guessesLeft = 9;
 //Functions
 //====================================================================
 
-function startGame() {
+ function startGame() {
   selectedWord = wordOption[Math.floor(Math.random() * wordOption.length)];
   //break the words apart
   lettersinWord = selectedWord.split("");
@@ -66,7 +66,7 @@ function checkLetters(letter) {
   if (isLetterInWord) {
 
     for (var i = 0; i < numBlanks; i++) {
-      if (selectedWord[i] == letter) {
+      if (selectedWord[i] === letter) {
         blanksAndSuccesses[i] = letter;
       }
     }
@@ -88,12 +88,12 @@ function roundComplete() {
 
 document.getElementById("numOfGuessesLeft").innerHTML = guessesLeft;
 document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
-// document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
+//document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
 
 
 
   //check if user won or lost
-  if(lettersinWord.toString()===blanksAndSuccesses.toString()){
+  if(lettersinWord.join(" ")===blanksAndSuccesses.join(" ")){
     winCount ++;
     alert("You Won!")
     //update the winCounterin HTML

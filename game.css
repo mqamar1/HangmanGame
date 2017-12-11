@@ -1,6 +1,7 @@
 body{
     background-image: url("assets/disneycharacters.png");
 
+
 }
 .header{
   font-size: 30px;
@@ -21,9 +22,17 @@ body{
 
 .color{
   background-color: #F3D9B0;
+  border: solid;
 
 }
 
 h4{
   font-size:20px;
+  color: blue;
+
+}
+
+p{
+  color: blue;
+  font-weight: bold;
 }
