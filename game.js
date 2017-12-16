@@ -27,7 +27,7 @@ var guessesLeft = 9;
 
   //Reset
   guessesLeft = 9;
-  wrongLetters = 0;
+  //notLetters = 0;
   blanksAndSuccesses = []; //blanks are cleared
 
   //populate blanks and successes with right number of blanks.
@@ -71,10 +71,17 @@ function checkLetters(letter) {
       }
     }
   }
+  else{
+    wrongLetters.push(letter);
+    guessesLeft--
+  console.log(wrongLetters);
+  }
   //letter wasn't found
   // else {
   //   wrongLetters.push(letter);
+  //   console.log(wrongLetters);
   //   guessesLeft--
+  //
   // }
 
   //console.log(blanksAndSuccesses);
@@ -88,7 +95,7 @@ function roundComplete() {
 
 document.getElementById("numOfGuessesLeft").innerHTML = guessesLeft;
 document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
-//document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
+document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
 
 
 
